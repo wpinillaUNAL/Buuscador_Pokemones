@@ -8,14 +8,47 @@ body{
 }
 html{
   font-size: 62,5%;
+  font-family: DMsans, Arial, Helvetica, sans-serif;
 }
+/* Navbar */
 nav{
   background-color: #EE4E34;
-  border-radius: 0 0 2px 2px;
+  border-radius: 0 0 10px 10px;
   height: 70px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
+nav img{
+  height: 40px;
+  width: 40px;
+  margin-left: 20px;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  margin-right: 20px;
+}
+.icon{
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 5px;
+}
+/* Rutas logos */
+.linkedin{
+  background-image: url('./icons/linkedin_icon.svg');
+}
+.github{
+  background-image: url('./icons/github_icon.svg');
+}
+.website{
+  background-image: url('./icons/website_icon.svg');
+}
+/* ---------------------------------------------------------- */
 main{
   width: 100%;
   height: auto;
