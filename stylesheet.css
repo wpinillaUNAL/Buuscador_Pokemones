@@ -1,0 +1,28 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #FCEDDA;
+}
+html{
+  font-size: 62,5%;
+}
+nav{
+  background-color: #EE4E34;
+  border-radius: 0 0 2px 2px;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+}
+main{
+  width: 100%;
+  height: auto;
+  min-width: 320px;
+}
+.main-textos{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
