@@ -42,8 +42,20 @@ nav ul{
 }
 .main-textos--input{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  height: 30px;
+  width: calc(100vw - 30%);
+  max-width: 400px;
+  background-color: #fff;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+input{
+  border: none;
+  width: 90%;
+  outline: none;
+  padding-left: 10px;
 }
 .buscador{
   display: inline-block;
@@ -53,6 +65,7 @@ nav ul{
   background-size: cover;
   background-position: center;
   background-image: url('./icons/zoom_icon.svg');
+  margin-right: 10px;
 }
 /* Rutas logos */
 .linkedin{
@@ -115,6 +128,22 @@ main{
   background-size: cover;
   background-position: center;
   background-image: url('./icons/x_icon.svg');
+}
+.tituloCiudad{
+  font-size: 3.4rem;
+  font-weight: bold;
+  line-height: 4rem;
+}
+.descripcionClima{
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 4rem;
+}
+.imagenClima{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.30);
+  border-radius: 10px;
+  height:170px;
+  margin-bottom: 10px;
 }
 
 
