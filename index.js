@@ -21,10 +21,10 @@ const createWeatherCard = (city, desc, temp, icon)=>{
   divDescripcion.innerText = desc;
   divDescripcion.classList.add('descripcionClima');
   const iconWeather = document.createElement('img');
-  iconWeather.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+  iconWeather.src = `${icon}`;
   iconWeather.classList.add('imagenClima');
   const divTemperatura = document.createElement('h2')
-  divTemperatura.innerText = `Temperatura: ${temp}°`;
+  divTemperatura.innerText = `${temp} m`;
   const botonBorrar = document.createElement('span');
   botonBorrar.classList.add('botonBorrar');
   divContenedor.append(divCiudad, divDescripcion,iconWeather, divTemperatura, botonBorrar);
@@ -35,13 +35,10 @@ const createWeatherCard = (city, desc, temp, icon)=>{
 }
 
 const funcionAgregar = async (ciudad = 'bogota')=>{
-  const fet = await window.fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${ciudad}&limit=5&appid=${apiKey}`);
+  const fet = await window.fetch(`https://pokeapi.co/api/v2/pokemon/ditto`);
   const salida = await fet.json();
   try{
-    const lat = salida[0].lat, lon=salida[0].lon;
-    const clima = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&lang=sp`);
-    const climaSalida = await clima.json();
-    createWeatherCard(salida[0]?.name, climaSalida.weather[0].description, climaSalida.main.temp,climaSalida.weather[0].icon);
+    createWeatherCard(salida?.name, `id:${salida?.id}`, `Altura:${salida.height}`,salida.sprites.front_default);
   }
   catch{
     window.alert('Lo sentimos, no pudimos encontrar esta ciudad :(');
