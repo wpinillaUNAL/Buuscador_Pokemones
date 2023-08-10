@@ -1,1 +1,1 @@
-Archivos usados:
+Link página: https://wpinillaunal.github.io/miniAppClima/
