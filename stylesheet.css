@@ -101,7 +101,7 @@ main{
   font-weight: 500;
   line-height: 1.8rem;
 }
-.main-weathers{
+.main-Cards{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
   align-items: center;
@@ -129,17 +129,17 @@ main{
   background-position: center;
   background-image: url('./icons/x_icon.svg');
 }
-.tituloCiudad{
+.tituloPoke{
   font-size: 3.4rem;
   font-weight: bold;
   line-height: 4rem;
 }
-.descripcionClima{
+.descripcionPoke{
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 4rem;
 }
-.imagenClima{
+.imagenPoke{
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.30);
   border-radius: 10px;
   height:170px;
