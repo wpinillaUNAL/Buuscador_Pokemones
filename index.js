@@ -34,7 +34,6 @@ const createPokeCard = (nombre, desc, altura, icon)=>{
 }
 
 const funcionAgregar = async (Pokemon)=>{
-  debugger;
   try{
     const fet = await window.fetch(`https://pokeapi.co/api/v2/pokemon/${Pokemon.toLowerCase()}`);
     const salida = await fet.json();
